@@ -2,6 +2,7 @@ import { dehydrate, Hydrate } from '@tanstack/react-query';
 import { getPostsQueryFn } from '@/lib/postsQueryFns';
 import getQueryClient from '@/lib/getQueryClient';
 import Posts from '@/components/client/posts/posts.client';
+import PaginationNavigation from '@/components/client/paginationNavigation';
 
 export default async function Home({
   searchParams,
