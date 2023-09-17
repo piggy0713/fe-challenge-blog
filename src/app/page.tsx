@@ -1,8 +1,7 @@
 import { dehydrate, Hydrate } from '@tanstack/react-query';
-import { getPostsQueryFn } from '@/lib/postsQueryFns';
+import getPostsQueryFn from '@/lib/postsQueryFns';
 import getQueryClient from '@/lib/getQueryClient';
 import Posts from '@/components/client/posts/posts.client';
-import PaginationNavigation from '@/components/client/paginationNavigation';
 
 export default async function Home({
   searchParams,
@@ -22,7 +21,7 @@ export default async function Home({
     <Hydrate state={dehydratedState}>
       <div className="flex justify-center flex-col box-content">
         <h1 className="text-5xl my-12 text-center justify-center">Blog</h1>
-        <Posts start={start} end={end} />
+        <Posts page={page} perPage={perPage} start={start} end={end} />
       </div>
     </Hydrate>
   );
