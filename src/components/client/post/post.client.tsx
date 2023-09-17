@@ -43,8 +43,8 @@ const PostClient: React.FC<PostProps> = ({ postId }) => {
           <h1 className="mb-8 mt-4 capitalize text-center justify-center  text-3xl font-semibold  lg:text-4xl">
             {data?.title}
           </h1>
-          <div className="mt-3 flex justify-center space-x-3 text-white">
-            <div className="flex itme-center gap-6">
+          <div className="mt-3 flex justify-center space-x-3">
+            <div className="space-y-2 md:space-y-0 md:flex itme-center gap-6">
               {data?.authors.map((author) => (
                 <div key={author.id} className="flex flex-row gap-3">
                   <Avatar className="relative h-10 w-10 flex-shrink-0">
