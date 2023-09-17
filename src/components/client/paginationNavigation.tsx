@@ -1,25 +1,24 @@
 'use client';
 
 import { FC } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, ChevronLeft } from 'lucide-react';
 
 type PaginationNavigationProps = {
   hasNextPage: boolean;
   hasPreviousPage: boolean;
+  page: string | string[] | undefined;
+  perPage: string | string[] | undefined;
 };
 
 const PaginationNavigation: FC<PaginationNavigationProps> = ({
   hasNextPage,
   hasPreviousPage,
+  page,
+  perPage,
 }) => {
   const router = useRouter();
-  const searchParams = useSearchParams();
-
-  const page = searchParams.get('page') ?? '1';
-  console.log('page', page);
-  const perPage = searchParams.get('perPage') ?? '5';
 
   return (
     <div className="flex gap-4">
