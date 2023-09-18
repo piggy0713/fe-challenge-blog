@@ -3,19 +3,11 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import truncateString from '@/lib/truncateString';
-import PaginationNavigation from '@/components/client/paginationNavigation';
 import formatDateTime from '@/lib/formateDateTime';
+import getPostQueryFn from '@/lib/postQueryFns';
+import Comments from '@/components/client/comments';
 import { useQuery } from '@tanstack/react-query';
 import { Post as PostType } from '@/types/apiTypes';
-import getPostQueryFn from '@/lib/postQueryFns';
-import {
-  Card,
-  CardHeader,
-  CardDescription,
-  CardContent,
-  CardFooter,
-} from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 type PostProps = {
@@ -93,18 +85,7 @@ const PostClient: React.FC<PostProps> = ({ postId }) => {
           ← View all posts
         </Link>
       </div>
-      <div className="container mx-auto max-w-screen-lg py-5 lg:py-8 mt-10 border-t border-gray-800">
-        <h2 className="mb-8 mt-4 capitalize text-3xl lg:text-4xl">Comments</h2>
-        {sortedComments?.map((comment) => (
-          <div key={comment.id} className="mb-8">
-            <div className="flex space-x-4 font-semibold">{comment.title}</div>
-            <div className="text-xs mb-2">
-              {formatDateTime(comment.createdAt)}
-            </div>
-            <div>{comment.description}</div>
-          </div>
-        ))}
-      </div>
+      <Comments comments={sortedComments ?? []} />
     </div>
   );
 };
