@@ -1,7 +1,7 @@
 import React from 'react';
 import PaginationNavigation from '@/components/client/paginationNavigation';
 import { render, screen } from '@testing-library/react';
-import { AppRouterContextProviderMock } from '../mocks/appRouterMock';
+import { AppRouterContextProviderMock } from '../../../mocks/appRouterMock';
 
 describe('PaginationNavigation', () => {
   it('renders both buttons', () => {
