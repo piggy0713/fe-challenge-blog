@@ -1,6 +1,8 @@
+'use client';
+
+import React from 'react';
 import formatDateTime from '@/lib/formateDateTime';
 import { Comment as CommentType } from '@/types/apiTypes';
-import React from 'react';
 
 type CommentsProps = {
   comments: CommentType[];

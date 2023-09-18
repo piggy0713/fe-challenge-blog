@@ -2,14 +2,16 @@
   "name": "fe-challenge-blog",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test": "jest --watch"
   },
   "husky": {
     "hooks": {
