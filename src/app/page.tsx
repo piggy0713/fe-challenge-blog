@@ -21,7 +21,12 @@ export default async function Home({
     <Hydrate state={dehydratedState}>
       <div className="flex justify-center flex-col box-content">
         <h1 className="text-5xl my-12 text-center justify-center">Blog</h1>
-        <Posts page={page} perPage={perPage} start={start} end={end} />
+        <Posts
+          page={`${page}`}
+          perPage={`${perPage}`}
+          start={start}
+          end={end}
+        />
       </div>
     </Hydrate>
   );
