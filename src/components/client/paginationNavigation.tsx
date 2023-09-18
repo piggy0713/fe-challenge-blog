@@ -3,13 +3,12 @@
 import { FC } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { ChevronRight, ChevronLeft } from 'lucide-react';
 
 type PaginationNavigationProps = {
   hasNextPage: boolean;
   hasPreviousPage: boolean;
-  page: string | string[] | undefined;
-  perPage: string | string[] | undefined;
+  page?: string;
+  perPage?: string;
 };
 
 const PaginationNavigation: FC<PaginationNavigationProps> = ({
@@ -31,8 +30,7 @@ const PaginationNavigation: FC<PaginationNavigationProps> = ({
         }}
         className="bg-white w-36 text-slate-500"
       >
-        <ChevronLeft />
-        Previous
+        &lt;&nbsp; <span>Previous</span>
       </Button>
 
       <Button
@@ -44,8 +42,7 @@ const PaginationNavigation: FC<PaginationNavigationProps> = ({
         }}
         className="bg-white w-36 text-slate-500"
       >
-        Next
-        <ChevronRight />
+        <span>Next</span> &nbsp;&gt;
       </Button>
     </div>
   );

@@ -7,14 +7,14 @@ type Author = {
   avatar: string;
 };
 
-type Comment = {
+export type Comment = {
   id: string;
   title: string;
   description: string;
   createdAt: string;
   updatedAt: string;
   postId: string;
-}
+};
 
 export type Post = {
   id: string;
