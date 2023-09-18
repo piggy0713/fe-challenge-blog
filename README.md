@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<hr>
 
-## Getting Started
+## ⚡ Introduction
 
-First, run the development server:
+This is a simple blog made with Nextjs 13
 
-```bash
+<hr>
+
+## ⭐ Demo
+
+[🔥View The Blog🔥](https://fe-challenge-blog.vercel.app/)
+
+<hr>
+
+## 👉 Tech Stack
+
+| Technology                                    | Icon                                                                                                                                       |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Jest](https://jestjs.io/)                    | <img src="https://github.com/get-icon/geticon/raw/master/icons/jest.svg" alt="Jest" width="30px" height="30px">                            |
+| [Next.js](https://nextjs.org/)                | <img src="https://github.com/get-icon/geticon/raw/master/icons/nextjs-icon.svg" alt="Next.js" width="30px" height="30px">                  |
+| [Prettier](https://prettier.io/)              | <img src="https://github.com/get-icon/geticon/raw/master/icons/prettier.svg" alt="Prettier" width="30px" height="30px">                    |
+| [React Query](https://tanstack.com/)          | <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8au58kc7e143c3bqrpz0.png" alt="React Query" width="30px" height="30px"> |
+| [Shadcn](https://ui.shadcn.com/)              | <img src="https://avatars.githubusercontent.com/u/139895814?s=200&v=4" alt="Shadcn" width="30px" height="30px">                            |
+| [Tailwind CSS](https://tailwindcss.com/)      | <img src="https://github.com/get-icon/geticon/raw/master/icons/tailwindcss-icon.svg" alt="Tailwind CSS" width="30px" height="30px">        |
+| [Typescript](https://www.typescriptlang.org/) | <img src="https://github.com/get-icon/geticon/raw/master/icons/typescript-icon.svg" alt="Typescript" width="30px" height="30px">           |
+
+<hr>
+
+## ⚒️ Building from source
+
+```sh
+# Clone the project:
+git clone https://github.com/piggy0713/fe-challenge-blog.git
+cd fe-challenge-blog
+
+# Install the dependencies:
+npm i
+
+# Testing the application:
+npm run test
+
+# Running the application:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
+
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
